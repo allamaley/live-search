@@ -1,11 +1,12 @@
 <template>
   <div class>
     <div class="colorCode" :style="{'background-color': item.hex}">
-      <h2>{{ item.name | capitalize }}</h2>
-      <div class="colorCode__productCode">{{item.hex}}</div>
-      <div>
-        <span v-for="(group, index) in item.brand" :key="index">{{ group }}</span>
+      <p>{{ item.name | capitalize }}</p>
+      <div class="colorDetails">
+        <div>{{item.brand}}</div>
+        <div v-for="(group, index) in item.color" :key="index">Group: {{ group }}</div>
       </div>
+      <div class="colorCode__productCode">{{item.hex}}</div>
     </div>
   </div>
 </template>
@@ -14,15 +15,18 @@
   position: relative;
   color: white;
   display: flex;
-  flex-direction: row;
-  height: 70px;
+  flex-flow: column nowrap;
+  min-height: 120px;
   width: 160px;
   margin: 15px;
+  padding: 6px;
+}
+.colorDetails {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 14px;
 }
 .colorCode__productCode {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
   font-size: 10px;
 }
 </style>
