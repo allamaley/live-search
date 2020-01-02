@@ -1,5 +1,5 @@
 # live-search
-Product live search with filtering
+Shop live search with Vue.js: Product live search using filters
 ## Project setup
 ```
 npm install
