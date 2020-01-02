@@ -105,7 +105,6 @@ select {
   background: #ffffff;
   overflow: hidden;
   border: 1px solid #cbcbcb;
-  border-radius: 3px;
   border: none;
   padding: 10px 10px 10px 5px;
   text-overflow: "";
