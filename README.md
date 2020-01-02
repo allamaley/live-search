@@ -9,3 +9,4 @@ npm install
 ```
 npm run serve
 ```
+![App Demo](demo.mp4)
